@@ -55,7 +55,7 @@
 			<inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
 		</inertial>
 	</link>
-	<link name="front_laser_link">
+	<link name="base_laser_link">
 		<visual>
 			<geometry>
 				<cylinder length="0.085" radius="0.076"/>
@@ -171,9 +171,9 @@
 			<origin xyz="0.0 0 0.4435" rpy="0 0 0"/>
 		</joint>
 
-		<joint name="base_link_to_front_laser_link" type="fixed">
+		<joint name="base_link_to_base_laser_link" type="fixed">
 			<parent link="base_link"/>
-			<child link="front_laser_link"/>
+			<child link="base_laser_link"/>
 			<origin xyz="1.5 0 0"/>
 		</joint>
 
